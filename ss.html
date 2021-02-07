@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin:0px;
+		padding:0px;
+		box-sizing:border-box;
+		text-decoration:none;
+	}
+	.root{
+		background-color:black;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+	}
+	.root .logo img{
+		height:90px;
+		width:100px;
+	}
+	.menu{
+    position:sticky;
+    top:0px;
+    z-index:999;
+}
+	.menu ul{
+		display:flex;
+		flex-wrap: wrap;
+		list-style-type:none;
+	}
+	.menu ul li{
+		flex:1 1 100px;
+	}
+	.menu ul li a{
+		color:white;
+		font-weight:bold;
+		display:inline-block;
+		padding:37px;
+		margin-left:70px;
+	}
+	.btn button{
+		height:94.3px;
+		background-color:navy;
+		color:white;
+		padding:30px 40px;
+		border-radius:5px;
+		font-weight:bold;
+		font-size:20px; 
+	}
+	.rotat{
+		height:50px;
+		width:100px;
+		background-color:red;
+		margin:90px;
+		transition:transform 2s linear 0s;
+	}
+	.rotat:hover{
+		transform:rotate(-580deg);
+		transform-origin:bottom right;
+	}
+</style>
+<body>
+	<header class="root">
+		<div class="logo">
+			<img src="C:\Users\Asp Prothes\Videos\Logo.jpeg" alt="Logo">
+		</div>
+		<div class="menu">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Application</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="btn">
+			<button>
+				Contact Us
+			</button>
+		</div>
+	</header>
+
+	<div class="rotat">
+		
+	</div>
+</body>
+</html>
